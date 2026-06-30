@@ -44,7 +44,7 @@ app.listen(3000, () => {
 app.get("/gymMembers", async (req, res) => {
     try {
         const result = await pool.query(
-            "SELECT * FROM gymMembers ORDER BY id ASC"
+            "SELECT * FROM gymMember ORDER BY id ASC"
         );
 
         res.json(result.rows);
