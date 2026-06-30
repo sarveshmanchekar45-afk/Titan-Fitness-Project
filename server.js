@@ -22,7 +22,7 @@ app.post("/gymMembers", async (req, res) => {
     try {
 
         await pool.query(
-            "INSERT INTO gymMembers(name,email,contact,plan,age) VALUES($1,$2,$3,$4,$5)",
+            "INSERT INTO gymMember(name,email,contact,plan,age) VALUES($1,$2,$3,$4,$5)",
             [name, email, contact, plan, age]
         );
 
