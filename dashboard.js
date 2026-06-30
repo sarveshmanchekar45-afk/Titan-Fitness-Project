@@ -18,6 +18,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     document.getElementById('email').textContent = data.email || '—';
     document.getElementById('phone').textContent = data.phone || '—';
     document.getElementById('plan').textContent = data.plan || '—';
+    document.getElementById('age').textContent = data.age || '—';
   } catch (err) {
     console.error('Profile load error:', err);
   }
