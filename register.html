@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>GymPro | Register</title>
+  <title>Titan Fitness | Register</title>
   <link rel="stylesheet" href="styles.css" />
   <script defer src="script.js"></script>
 </head>
 <body>
   <header class="page-header">
     <div class="container nav-bar">
-      <a class="nav-logo" href="/">GymPro</a>
+      <a class="nav-logo" href="/">Titan Fitness</a>
       <nav>
         <a href="index.html">Home</a>
         <a href="login.html">Login</a>
@@ -20,7 +20,7 @@
 
   <main class="container form-page">
     <section class="form-card form-card-large">
-      <h1>Create Your GymPro Account</h1>
+      <h1>Create Your Titan Fitness Account</h1>
       <p>Sign up now for full access to classes, trainers, and member benefits.</p>
       <form action="thankyou.html" method="POST" id="registerForm">
         <div class="form-grid">
@@ -87,11 +87,13 @@ email: document.getElementById("email").value,
 
 contact: document.getElementById("contact").value,
 
-plan: document.getElementById("plan").value
+plan: document.getElementById("plan").value,
+
+age: document.getElementById("age").value
 
 };
 
-const response = await fetch("http://localhost:3000/gymMembers",{
+const response = await fetch("https://titan-fitness-project.onrender.com/gymMembers",{
 
 method:"POST",
 
