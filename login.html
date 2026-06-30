@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Titan Fitness | Login</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header class="page-header">
+    <div class="container nav-bar">
+      <a class="nav-logo" href="/">Titan Fitness</a>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="register.html">Register</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container form-page">
+    <section class="form-card">
+      <h1>Member Login</h1>
+      <p>Enter your account details to access your dashboard.</p>
+      <form action="/login" method="POST" id="loginForm">
+        <div class="form-field">
+          <label for="username">Username</label>
+          <input type="text" id="username" name="username" required />
+        </div>
+        <div class="form-field">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" required />
+        </div>
+        <button class="btn btn-primary btn-block" type="submit">Login</button>
+      </form>
+      <p class="text-center">New to GymPro? <a href="register.html">Create an account</a></p>
+      <p class="error-message" id="errorMessage"></p>
+    </section>
+  </main>
+</body>
+</html>

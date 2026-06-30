@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Thank You</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    background:linear-gradient(135deg,#4facfe,#00f2fe);
+}
+
+.container{
+    background:#fff;
+    width:90%;
+    max-width:500px;
+    padding:40px;
+    text-align:center;
+    border-radius:20px;
+    box-shadow:0 15px 35px rgba(0,0,0,0.2);
+    animation:popup 0.8s ease;
+}
+
+@keyframes popup{
+    from{
+        transform:scale(0.6);
+        opacity:0;
+    }
+    to{
+        transform:scale(1);
+        opacity:1;
+    }
+}
+
+.icon{
+    width:100px;
+    height:100px;
+    background:#28a745;
+    color:#fff;
+    font-size:60px;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin:0 auto 20px;
+    animation:tick 1s ease;
+}
+
+@keyframes tick{
+    0%{transform:scale(0);}
+    80%{transform:scale(1.2);}
+    100%{transform:scale(1);}
+}
+
+h1{
+    color:#28a745;
+    font-size:36px;
+    margin-bottom:15px;
+}
+
+p{
+    color:#555;
+    font-size:18px;
+    line-height:1.6;
+    margin-bottom:30px;
+}
+
+.btn{
+    display:inline-block;
+    padding:12px 30px;
+    background:#4facfe;
+    color:#fff;
+    text-decoration:none;
+    border-radius:30px;
+    font-size:18px;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#0077ff;
+    transform:translateY(-3px);
+}
+</style>
+
+</head>
+<body>
+
+<div class="container">
+
+    <div class="icon">✓</div>
+
+    <h1>Thank You!</h1>
+
+    <p>
+        Your request has been submitted successfully.<br><br>
+        <strong>Our team will contact you within 24 hours.</strong><br>
+        We appreciate your interest and look forward to assisting you.
+    </p>
+
+    <a href="index.html" class="btn">Back to Home</a>
+
+</div>
+
+</body>
+</html>
